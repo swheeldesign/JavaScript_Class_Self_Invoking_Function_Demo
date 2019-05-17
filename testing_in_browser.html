@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+      <!--  Meta tags  -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+		<script>
+		
+			class Person {
+				 constructor(name){
+				  this.name = name;
+				 }
+			}
+
+			class Police {
+				 TagPerson(){
+				  console.log("You're under arrest, " + window.myapp.criminal.name + "!");
+				 }
+			}
+
+			(function(){
+				 window.myapp = {};
+				 let bob = new Person("Bob");
+				 let cop = new Police();
+				 window.myapp.criminal = bob;
+				 cop.TagPerson();
+			})();
+		</script>
+
+      <title>TEST TEST TEST</title>
+  </head>
+  <body>
+
+	<!--	Comments.	-->
+	<div id="test_space">
+		<h1>This is a test.</h1>
+		<p>I wanted to see if a class can invoke the methods or properties of another class 
+		if it is in the window space. This only works using the browser.</p>
+	</div>
+   
+  </body>
+</html>
